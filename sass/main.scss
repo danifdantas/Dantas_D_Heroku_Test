@@ -1,0 +1,26 @@
+@import '_vars';
+@import 'modules/_home';
+@import 'modules/_header';
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* inehrit from Body */
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  // padding: 50px;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  background-color: $white;
+}
