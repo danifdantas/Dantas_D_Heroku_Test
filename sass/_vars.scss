@@ -1,0 +1,12 @@
+$black: #2E2E2E;
+$white:#F8F8F8;
+$green:#84B3B4;
+@mixin ease {
+  transition: all 0.3s ease;
+}
+
+@mixin paragraph {
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
