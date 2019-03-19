@@ -5,7 +5,7 @@
   margin: auto;
   @media screen and (min-width: 1000px) {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -159,6 +159,7 @@
 #health {
   @media screen and (min-width: 1000px) {
     grid-column:span 2;
+    margin-bottom: 10rem;
   }
   h2 {
     @media screen and (min-width: 1000px) {
