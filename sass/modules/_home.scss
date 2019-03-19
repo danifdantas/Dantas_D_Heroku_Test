@@ -3,6 +3,7 @@
   grid-template-columns: 1fr;
   @media screen and (min-width: 1000px) {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 4rem;
   }
 }
 
@@ -54,6 +55,10 @@
 
 .prodIntro {
   padding: 4rem;
+  @media screen and (min-width: 1000px) {
+    margin-top: 5rem;
+    max-width: 30rem;
+  }
 }
 
 .paragraph {
@@ -70,14 +75,26 @@
   justify-content: space-between;
   padding: 2rem;
   margin-bottom: 4rem;
+  @media screen and (min-width: 1000px) {
+    margin:auto;
+  }
   .balance {
     background-image: url('../images/balance.png');
+    @media screen and (min-width: 1000px) {
+      background-image: url('../images/balance@2x.png');
+    }
   }
   .versatile {
     background-image: url('../images/versatile.png');
+    @media screen and (min-width: 1000px) {
+      background-image: url('../images/versatile@2x.png');
+    }
   }
   .sustainable {
     background-image: url('../images/sustainable.png');
+    @media screen and (min-width: 1000px) {
+      background-image: url('../images/sustainable@2x.png');
+    }
   }
 }
 
@@ -97,11 +114,20 @@
   height: 96px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 2rem;
+  @media screen and (min-width: 1000px) {
+    width: 190px;
+    height: 190px;
+  }
 }
 
 .vid-wrap {
   overflow: hidden;
   padding: 2rem;
+  @media screen and (min-width: 1000px) {
+    grid-column: span2;
+    padding: 0;
+  }
   video {
     width: 100%;
   }
@@ -110,6 +136,11 @@
 .btn-cont {
   text-align: center;
   margin: 4rem 0 6rem 0;
+  @media screen and (min-width: 1000px) {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 2rem 0 2rem 0;
+  }
 }
 
 .btn {
@@ -122,8 +153,18 @@
 }
 
 //  ============ LIFESTYLE SECTION
+#health {
+  @media screen and (min-width: 1000px) {
+    grid-column:span 2;
+  }
+}
+
 .picture {
   position: relative;
+  @media screen and (min-width: 1000px) {
+    grid-column:1/span 2;
+    margin-bottom: 4rem;
+  }
   img {
     width: 100%;
   }
@@ -133,11 +174,28 @@
     max-width: 250px;
     top: 5rem;
     left: 1rem;
+    @media screen and (min-width: 1000px) {
+      font-size: 6.3rem;
+      left: 60rem;
+      top: 12rem;
+      max-width: 300px;
+    }
+  }
+}
+
+.desktop-only {
+  .lifestyle-text {
+    @media screen and (min-width: 1000px) {
+      margin-top: 15rem;
+    }
   }
 }
 
 .lifestyle-text {
   padding: 4rem;
+  @media screen and (min-width: 1000px) {
+    margin:auto;
+  }
 }
 
 // ======
@@ -169,14 +227,23 @@ ul {
 
 footer {
   background-image: url('../images/footer_bg_mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 170px;
   position: relative;
+  @media screen and (min-width: 1000px) {
+    background-image: url('../images/footer_bg_desktop.jpg');
+    height: 300px;
+  }
   p {
     position: absolute;
     bottom: 2rem;
     left: 100px;
     color: $white;
     text-align: center;
+    @media screen and (min-width: 1000px) {
+      left: 45%;
+    }
     span {
       display: block;
     }
