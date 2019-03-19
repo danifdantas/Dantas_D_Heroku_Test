@@ -2,7 +2,8 @@
 // console.log("script working!");
 var vid = document.querySelector('#vid');
 
-window.addEventListener("load", () => {
+window.addEventListener("load", showVideo);
+function showVideo() {
 
   // create source video element according to screen size
   if (window.matchMedia("(max-width: 700px)").matches) {
@@ -15,7 +16,7 @@ window.addEventListener("load", () => {
     this.videoSource(vid, "video/tidal_desktop.mp4", "video/mp4");
 
   }
-})
+}
 
 function videoSource(element, src, type) {
   var source = document.createElement("source");
